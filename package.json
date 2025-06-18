@@ -9,7 +9,8 @@
     "scalar-types": "nodemon scalar.js",
     "custom-types": "nodemon customTypes.js",
     "arguments": "nodemon arguments.js",
-    "arrays": "nodemon arrays.js"
+    "arrays": "nodemon arrays.js",
+    "relationship": "nodemon relationship.js"
   },
   "keywords": [],
   "author": "",
