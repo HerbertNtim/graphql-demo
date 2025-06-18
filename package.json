@@ -11,7 +11,8 @@
     "arguments": "nodemon arguments.js",
     "arrays": "nodemon arrays.js",
     "relationship": "nodemon relationship.js",
-    "mutation": "nodemon mutation.js"
+    "mutation": "nodemon mutation.js",
+    "input-types": "nodemon inputTypes.js"
   },
   "keywords": [],
   "author": "",
