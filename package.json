@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "scalar-types": "nodemon scalar.js"
+    "scalar-types": "nodemon scalar.js",
+    "custom-types": "nodemon customTypes.js"
   },
   "keywords": [],
   "author": "",
