@@ -10,7 +10,8 @@
     "custom-types": "nodemon customTypes.js",
     "arguments": "nodemon arguments.js",
     "arrays": "nodemon arrays.js",
-    "relationship": "nodemon relationship.js"
+    "relationship": "nodemon relationship.js",
+    "mutation": "nodemon mutation.js"
   },
   "keywords": [],
   "author": "",
