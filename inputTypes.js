@@ -21,9 +21,17 @@ const typeDefs = `#graphql
       password: String!
     }
 
+    input updateUserInput {
+      firstName: String
+      lastName: String
+      email: String
+      password: String
+    }
+
     type Mutation {
       addUser(input: AddUserInput!): User!
       deleteUser(id: ID!): User!
+      updateUser(id: ID!, input: updateUserInput!): User!
     }
   `;
 
@@ -63,6 +71,17 @@ const resolvers = {
       users.splice(userIndex, 1);
       return deleteUser;
     },
+
+    updateUser: (_, { id, input }) => {
+      const user = users.find((user) => String(user.id) === String(id))
+
+      if(!user) {
+        throw new Error("User not found")
+      }
+
+      Object.assign(user, input);
+      return user
+    }
   },
 };
 
