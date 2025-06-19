@@ -71,4 +71,28 @@ const resolvers = {
     ],
   },
 };
+```
+
+## 🔢 Scalar Types
+
+**Scalar types** are the basic data types in GraphQL — they represent the leaves of the query, meaning values that cannot be broken down any further.
+
+### ✨ Built-in Scalar Types
+
+- `Int` – A 32-bit integer.
+- `Float` – A floating-point number.
+- `String` – A sequence of characters.
+- `Boolean` – `true` or `false`.
+- `ID` – A unique identifier (often used for fetching objects).
+
+### 💡 Example
+
+```graphql
+type Book {
+  title: String
+  pages: Int
+  isPublished: Boolean
+  id: ID
+}
+
 
