@@ -94,5 +94,22 @@ type Book {
   isPublished: Boolean
   id: ID
 }
+```
+
+## 🧱 Custom Types
+
+In GraphQL, you can create **custom object types** to represent more complex or structured data beyond the built-in scalar types.
+
+### 🛠️ How to Define a Custom Type
+
+Use the `type` keyword followed by a name and its fields:
+
+```graphql
+type Author {
+  name: String
+  age: Int
+  books: [Book]
+}
+
 
 
